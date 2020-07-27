@@ -8,9 +8,15 @@ class Quiz extends Component{
     }
     
     render(){
-        return (<div className="QuizQuestion">
-            {quizData.quiz_questions.map(q=> {return q.instruction_text})}
+        return (
+        <div>
+            <div className="QuizQuestion">
+                {quizData.quiz_questions[0].instruction_text}
+            </div>
         </div>
+  //      return (<div className="QuizQuestion">
+    //        {quizData.quiz_questions.map(q=> {return q.instruction_text})}
+      //  </div>
         )
     }
     
