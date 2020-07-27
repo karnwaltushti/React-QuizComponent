@@ -10,7 +10,7 @@ class Quiz extends Component{
         this.state={quiz_position: 1}
     }
     showNextQuestion (){
-        this.setState.quiz_position=this.setState.quiz_position+1
+        this.state.quiz_position=this.state.quiz_position+1
     }
     render(){
         const isQuizEnd= quizData.quiz_questions.length === this.state.quiz_position-1 ? true:false
